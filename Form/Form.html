@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+    form{
+        width: 40%;
+        padding: 20px;
+        background-color: rgba(0, 255, 255, 0.221);
+        margin: 50px auto;
+        box-shadow: 10px 10px 20px gray;
+        border-radius: 10px;
+    }
+    input{
+        padding: 7px;
+        width: 80%;
+    }
+    .field{
+        text-align: center;
+    }
+    h3{
+        text-align: center;
+        color: red;
+    }
+    form .field .submit{
+        padding: 10px;
+        background-color: goldenrod;
+        cursor: pointer;
+        width: 30%;
+        border-radius: 10px;
+    }
+    </style>
+</head>
+<body>
+    <form action="/post" method="post">
+        <h3>Registration</h3>
+        <div class="field">
+        <input type="text" name="name" placeholder="Enter name" required/>
+        <br/>
+        <br/>
+        <input type="text" name="age" placeholder="Enter age" required/>
+        <br/>
+        <br/>
+        <input type="text" name="email" placeholder="Enter email" required/>
+        <br/>
+        <br/>
+        <input type="password" name="password" placeholder="password **" required/>
+        <br/>
+        <br/>
+        <input type="submit" value="Submit" class="submit"/>
+        </div>
+    </form>
+</body>
+</html>
